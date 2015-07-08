@@ -47,7 +47,7 @@ common: &default_settings
   # The newrelic agent generates its own log file to keep its logging
   # information separate from that of your application.  Specify its
   # log level here.
-  log_level: info
+  log_level: debug
 
   # Optionally set the path to the log file This is expanded from the
   # root directory (may be relative or absolute, e.g. 'log/' or
@@ -99,6 +99,7 @@ common: &default_settings
       # By default the agent automatically injects the monitoring JavaScript 
       # into web pages. Set this attribute to false to turn off this behavior.
       auto_instrument: true
+  #    loader: full
 
   # Proxy settings for connecting to the service.
   #
