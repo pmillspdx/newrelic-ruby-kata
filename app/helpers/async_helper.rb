@@ -4,6 +4,8 @@ module AsyncHelper
     # up an open relay just to make the kata code work. The real version 
     # of this code would open an SMTP connection, send the data, close the
     # connection, check the return value, etc.
-    sleep(10)
+    Thread.new {
+      sleep(10)
+    }
   end
 end
